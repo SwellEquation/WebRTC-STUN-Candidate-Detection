@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WebRTC Leak Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #0e0f1a;
+      color: #eaeaf0;
+      padding: 2rem;
+    }
+
+    button {
+      padding: 0.7rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      background: #5865f2;
+      color: white;
+      cursor: pointer;
+    }
+
+    pre {
+      margin-top: 1rem;
+      background: #181a2e;
+      padding: 1rem;
+      border-radius: 8px;
+      white-space: pre-wrap;
+      line-height: 1.4;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>WebRTC IP Leak Test</h1>
+  <p>
+    This test compares a normal network request IP with WebRTC STUN candidates.
+  </p>
+
+  <button id="runTest">Run Test</button>
+
+  <pre id="output">Idle.</pre>
+
+  <script src="app.js"></script>
+</body>
+</html>
